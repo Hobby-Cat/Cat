@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Document sans nom</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("p a:first-child").css("background", "#9cf");
+	$("p a:Last-child").css("background", "#9ef");
+	$("p a:eq(2)").css("background", "#9ef");
+	$("p a:eq(3)").css("background", "#95f");
+});
+</script>
+
+
+<style type="text/css">
+a{ 
+color: black;
+}
+
+p {
+	 width: 150px;
+border: 1px dotted black;
+padding-left:15px;
+}
+</style>
+</head>
+
+<body>
+<p>
+<a href="#">Lien1</a><br />
+<a href="#">Lien2</a><br />
+<a href="#">Lien3</a><br />
+<a href="#">Lien4</a><br />
+<a href="#">Lien5</a><br />
+</body>
+</html>

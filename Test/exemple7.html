@@ -3,26 +3,46 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Document sans nom</title>
+
+
+
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
 </script>
 
-<script>
-/* Je mets un commentaire */
-/* Je mets un 2ème commentaire */
-/* Je mets un 3ème commentaire */
+<script type="text/javascript">
 $(document).ready(function(){
-	$("p").click(function(){
-		
-			$(this).hide();
-		});
-	});
+	;$("#box> *").css("border","5px double black");
+	
+});
 </script>
+
+
+
+<style type="text/css">
+span#box
+{ display:block;}
+div
+{ width: 80px;
+height: 100px;
+margin: 5px;
+float: left;
+background: #9cf;}
+
+
+p{text-align:center;}
+</style>
+
+
+
 </head>
 
 <body>
+<span id="box">
+<div></div>
+<div><p>X X</p></div>
 
-<p> if you click on me, i will disaeppear</p>
-<p> clicke me away!</p>
-<p> clicke me too!</p>
+<div><p>Par<br /><span>a</span><br />graphe</p></div></span>
+
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Document sans nom</title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+</script>
+
+<script>
+$ (document).ready(function()
+{
+	
+	$("ul#menu li a").hover(function() {
+		$(this).stop().animate( {paddingLeft:"50px"}, 1000); },
+			
+			function() {
+							$(this).stop().animate( {paddingLeft:"0" }, 200)
+			})
+		
+	});
+	
+	
+
+
+</script>
+
+<style>
+
+#nav ul { list-style-type:none;
+padding:0px;
+margin:0px;
+}
+
+#nav li a { display:block;
+height:25px;
+line-height:25px;
+width:120px;
+background:pink;
+color:black;
+text-decoration:none;
+text-align:center;
+border:1Px solid black;
+}
+</style>
+</head>
+
+<body>
+
+<div id="nav">
+
+<ul id="menu">
+
+<li> <a href="#"> Menu 1 </a> </li>
+<li> <a href="#"> Menu 2 </a> </li>
+<li> <a href="#"> Menu 3 </a> </li>
+<li> <a href="#"> Menu 4 </a> </li>
+<li> <a href="#"> Menu 5 </a> </li>
+
+</ul>
+</div>
+
+
+
+</body>
+</html>

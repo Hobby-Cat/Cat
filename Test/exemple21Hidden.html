@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Document sans nom</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("div:visible").css("background", "#9cf");
+	$("div:hidden").css("background", "#9af");
+	$(".1").click(function(){
+		$("div.hidden").show();
+	});
+	
+	$(".2").click(function(){
+		$("div.hidden").hide();
+		//$("div:hidden").hide();la c 'est ceux qui ont la propriete hidden et au dessus qui on class hidden
+	});
+});
+</script>
+
+<style type="text/css">
+.hidden{display:none;}
+
+
+div{ width: 40px;
+height: 40px;
+margin: 5px;
+float: left;
+border: 1px solid black;}
+
+p{text-align::center;}
+</style>
+</head>
+
+<body>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div class="hidden"></div>
+<div class="hidden"></div>
+<p><button class="1">afficher</button></p>
+<p><button class="2">cacher</button></p>
+</body>
+</html>

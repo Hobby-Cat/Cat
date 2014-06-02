@@ -7,22 +7,20 @@
 </script>
 
 <script>
-/* Je mets un commentaire */
-/* Je mets un 2ème commentaire */
-/* Je mets un 3ème commentaire */
 $(document).ready(function(){
-	$("p").click(function(){
-		
-			$(this).hide();
-		});
-	});
+	$("P1").css("border","1px solid red");
+	$("#deux").css("border","1px solid black");
+});
 </script>
+<style type="text/css">
+p{ width:200px;
+padding: 3px;}
+</style>
 </head>
 
 <body>
-
-<p> if you click on me, i will disaeppear</p>
-<p> clicke me away!</p>
-<p> clicke me too!</p>
+<p id="p1"> paragraphe1</p>
+<p id="deux"> paragraphe2</p>
+<p> paragraphe3</p>
 </body>
 </html>
